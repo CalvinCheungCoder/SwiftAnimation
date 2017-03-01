@@ -27,9 +27,17 @@ class ViewController: UIViewController {
     // 第二阶段:移动Btn
     override func viewWillAppear(_ animated: Bool) {
         
-        UIView.animate(withDuration: 1) { 
-            self.loginButton!.frame = CGRect(x: 20, y: self.loginButton!.frame.origin.y, width: self.loginButton!.frame.width, height: self.loginButton!.frame.height)
-        }
+        // 方法一:闭包
+//        UIView.animate(withDuration: 1) { 
+//            self.loginButton!.frame = CGRect(x: 20, y: self.loginButton!.frame.origin.y, width: self.loginButton!.frame.width, height: self.loginButton!.frame.height)
+//        }
+        
+        // 方法二:方法形式
+        UIView.beginAnimations(nil, context: nil)// 动画开始
+        UIView.setAnimationDuration(1)// 动画时间设置
+        loginButton!.frame = CGRect(x: 20, y: self.loginButton!.frame.origin.y, width: self.loginButton!.frame.width, height: self.loginButton!.frame.height)// 按钮位置变化
+        UIView.commitAnimations()// 提交动画
+        
     }
 
     override func didReceiveMemoryWarning() {
