@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E16B49C1E6AFB3900321FF2 /* turntable.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E16B49B1E6AFB3900321FF2 /* turntable.png */; };
 		3ECE3F5C1E6707AE006F280D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECE3F5B1E6707AE006F280D /* AppDelegate.swift */; };
 		3ECE3F5E1E6707AE006F280D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECE3F5D1E6707AE006F280D /* ViewController.swift */; };
 		3ECE3F611E6707AE006F280D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ECE3F5F1E6707AE006F280D /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E16B49B1E6AFB3900321FF2 /* turntable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = turntable.png; sourceTree = "<group>"; };
 		3ECE3F581E6707AE006F280D /* 01_AnimationBegin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 01_AnimationBegin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ECE3F5B1E6707AE006F280D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3ECE3F5D1E6707AE006F280D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 				3ECE3F5D1E6707AE006F280D /* ViewController.swift */,
 				3ECE3F5F1E6707AE006F280D /* Main.storyboard */,
 				3ECE3F621E6707AE006F280D /* Assets.xcassets */,
+				3E16B49B1E6AFB3900321FF2 /* turntable.png */,
 				3ECE3F641E6707AE006F280D /* LaunchScreen.storyboard */,
 				3ECE3F671E6707AE006F280D /* Info.plist */,
 			);
@@ -124,6 +127,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3ECE3F661E6707AE006F280D /* LaunchScreen.storyboard in Resources */,
+				3E16B49C1E6AFB3900321FF2 /* turntable.png in Resources */,
 				3ECE3F631E6707AE006F280D /* Assets.xcassets in Resources */,
 				3ECE3F611E6707AE006F280D /* Main.storyboard in Resources */,
 			);
@@ -297,6 +301,7 @@
 				3ECE3F6C1E6707AE006F280D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

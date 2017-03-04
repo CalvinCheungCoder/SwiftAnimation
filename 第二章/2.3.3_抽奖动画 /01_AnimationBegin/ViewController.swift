@@ -10,41 +10,47 @@ import UIKit
 
 class ViewController: UIViewController,CAAnimationDelegate {
 
-    var loginButton:UIButton?
+    var Img:UIImageView?
+    var index:Int = 1;
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        
-        loginButton = UIButton(frame: CGRect(x: 20, y: 210, width: self.view.frame.width-20*2, height: 50))
-        loginButton!.backgroundColor = UIColor(colorLiteralRed: 50/255.0, green: 185/255.0, blue: 170/255.0, alpha: 1.0)
-        loginButton!.setTitle("登录", for: UIControlState.normal)
-        loginButton!.layer.cornerRadius = 3
-        self.view.addSubview(loginButton!)
+        Img = UIImageView()
+        Img?.bounds = CGRect(x: 0, y: 0, width: 300, height: 300)
+        Img?.center = self.view.center
+        Img?.image = UIImage(named: "turntable.png")
+        Img?.backgroundColor = UIColor.white
+        self.view.backgroundColor = UIColor.white
+        self.view.addSubview(Img!)
     }
     
     
     override func viewWillAppear(_ animated: Bool) {
         
-        // 缩放，基于 UIView 的 transform 属性
+        //      CGAffineTransform:旋转
         UIView.beginAnimations(nil, context: nil)// 动画开始
-        UIView.setAnimationDelegate(self)// 设置回调对象
-        UIView.setAnimationDuration(1)// 动画时间
-        loginButton!.transform = CGAffineTransform(scaleX: 0.7, y: 1.2)// 缩放比，>1为扩大，<1为缩放
+        UIView.setAnimationDelegate(self)
         UIView.setAnimationDidStop(#selector(ViewController.animationEnd))
+        UIView.setAnimationDuration(0.01)// 动画周期设置
+        let angle:CGFloat = CGFloat(M_PI_2);
+        Img!.transform = CGAffineTransform(rotationAngle: angle)// 3.14
         UIView.commitAnimations()// 动画提交
         
     }
     
-    // 1.delegate 回调
-    func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
-        print("animation stop!")
-    }
-    
-    // 2.自定义回调
     func animationEnd() {
-        print("animationEnd")
+        
+        UIView.beginAnimations(nil, context: nil)// 动画开始
+        UIView.setAnimationDelegate(self)
+        UIView.setAnimationDidStop(#selector(ViewController.animationEnd))
+        UIView.setAnimationDuration(0.01)// 动画周期设置
+        let angleStart:CGFloat = CGFloat(M_PI_2)
+        index += 1
+        let angle:CGFloat = CGFloat(index)*angleStart
+        Img!.transform = CGAffineTransform(rotationAngle: angle)
+        UIView.commitAnimations()
     }
     
     override func didReceiveMemoryWarning() {
