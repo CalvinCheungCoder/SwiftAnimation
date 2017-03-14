@@ -11,7 +11,7 @@ iOS 动画 核心技术与案例实战 一书的阅读与代码记录
 |第3章 | 显示层关键帧动画 |
 |第4章 | 显示层逐帧动画 |
 |第5章 | GIF动画效果 |
-|第2卷 | 内容曾动画 |
+|第2卷 | 内容层动画 |
 |第6章 | Core AnimationCABasicAnimation动画效果 |
 |第7章 | Core Animati：CAKeyframeAnimation、CAAnimation Group动画 |
 |第8章 | 综合案例：登录按钮动画效果 |
