@@ -57,10 +57,20 @@ class ViewController: UIViewController {
 //        loginButton?.layer.add(animation, forKey: nil)
         
         //位置
+//        let animation:CABasicAnimation = CABasicAnimation()
+//        animation.keyPath = "transform.scale.x"
+//        animation.fromValue = 1.0
+//        animation.toValue = 0.8
+//        animation.duration = 2.0
+//        animation.fillMode = kCAFillModeForwards
+//        animation.isRemovedOnCompletion = false
+//        loginButton?.layer.add(animation, forKey: nil)
+        
+        // transform除了scale缩放属性之外还有rotation旋转属性
+        // 旋转
         let animation:CABasicAnimation = CABasicAnimation()
-        animation.keyPath = "transform.scale.x"
-        animation.fromValue = 1.0
-        animation.toValue = 0.8
+        animation.keyPath = "transform.rotation"
+        animation.toValue = 3.14/2
         animation.duration = 2.0
         animation.fillMode = kCAFillModeForwards
         animation.isRemovedOnCompletion = false
