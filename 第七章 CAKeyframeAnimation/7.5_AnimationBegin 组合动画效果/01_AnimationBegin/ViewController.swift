@@ -45,12 +45,22 @@ class ViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         
         //位置
+//        let animation:CABasicAnimation = CABasicAnimation()
+//        animation.keyPath = "position"
+//        let positionX:CGFloat = loginButton!.frame.origin.x+0.5*loginButton!.frame.size.width;
+//        let positionY:CGFloat = loginButton!.frame.origin.y+0.5*loginButton!.frame.size.height+100;
+//        animation.toValue = NSValue(cgPoint: CGPoint(x:positionX,y: positionY))
+//        animation.byValue = NSValue(cgPoint:CGPoint(x:-20,y:100))
+//        animation.duration = 2.0
+//        animation.fillMode = kCAFillModeForwards
+//        animation.isRemovedOnCompletion = false
+//        loginButton?.layer.add(animation, forKey: nil)
+        
+        //位置
         let animation:CABasicAnimation = CABasicAnimation()
-        animation.keyPath = "position"
-        let positionX:CGFloat = loginButton!.frame.origin.x+0.5*loginButton!.frame.size.width;
-        let positionY:CGFloat = loginButton!.frame.origin.y+0.5*loginButton!.frame.size.height+100;
-        animation.toValue = NSValue(cgPoint: CGPoint(x:positionX,y: positionY))
-        animation.byValue = NSValue(cgPoint:CGPoint(x:-20,y:100))
+        animation.keyPath = "transform.scale.x"
+        animation.fromValue = 1.0
+        animation.toValue = 0.8
         animation.duration = 2.0
         animation.fillMode = kCAFillModeForwards
         animation.isRemovedOnCompletion = false
