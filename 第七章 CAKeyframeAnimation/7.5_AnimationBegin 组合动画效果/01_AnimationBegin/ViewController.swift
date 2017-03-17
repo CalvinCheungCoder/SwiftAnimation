@@ -44,7 +44,7 @@ class ViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         
-        //位置
+        // 位置
 //        let animation:CABasicAnimation = CABasicAnimation()
 //        animation.keyPath = "position"
 //        let positionX:CGFloat = loginButton!.frame.origin.x+0.5*loginButton!.frame.size.width;
@@ -56,7 +56,7 @@ class ViewController: UIViewController {
 //        animation.isRemovedOnCompletion = false
 //        loginButton?.layer.add(animation, forKey: nil)
         
-        //位置
+        // 位置
 //        let animation:CABasicAnimation = CABasicAnimation()
 //        animation.keyPath = "transform.scale.x"
 //        animation.fromValue = 1.0
@@ -78,9 +78,19 @@ class ViewController: UIViewController {
         
         
         //位置
+//        let animation:CABasicAnimation = CABasicAnimation()
+//        animation.keyPath = "transform.translation.y"
+//        animation.toValue = 100
+//        animation.duration = 2.0
+//        animation.fillMode = kCAFillModeForwards
+//        animation.isRemovedOnCompletion = false
+//        loginButton?.layer.add(animation, forKey: nil)
+        
+        
+        // 圆角
         let animation:CABasicAnimation = CABasicAnimation()
-        animation.keyPath = "transform.translation.y"
-        animation.toValue = 100
+        animation.keyPath = "cornerRadius"
+        animation.toValue = 15
         animation.duration = 2.0
         animation.fillMode = kCAFillModeForwards
         animation.isRemovedOnCompletion = false
