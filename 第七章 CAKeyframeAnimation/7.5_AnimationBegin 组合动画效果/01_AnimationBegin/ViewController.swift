@@ -118,10 +118,22 @@ class ViewController: UIViewController {
 //        loginButton?.layer.add(animation, forKey: nil)
         
         // 淡入
+//        let animation:CABasicAnimation = CABasicAnimation()
+//        animation.keyPath = "opacity"
+//        animation.fromValue = UIColor.green.cgColor
+//        animation.toValue = 1.0
+//        animation.duration = 2.0
+//        animation.fillMode = kCAFillModeForwards
+//        animation.isRemovedOnCompletion = false
+//        loginButton?.layer.add(animation, forKey: nil)
+        
+        // 阴影渐变
+        loginButton?.layer.shadowColor = UIColor.red.cgColor
+        loginButton?.layer.shadowOpacity = 0.5
+//        loginButton?.layer.shadowPath = shadowPath.CGPath
         let animation:CABasicAnimation = CABasicAnimation()
-        animation.keyPath = "opacity"
-        animation.fromValue = UIColor.green.cgColor
-        animation.toValue = 1.0
+        animation.keyPath = "shadowOffset"
+        animation.toValue = NSValue(cgSize: CGSize(width: 10, height: 10))
         animation.duration = 2.0
         animation.fillMode = kCAFillModeForwards
         animation.isRemovedOnCompletion = false
