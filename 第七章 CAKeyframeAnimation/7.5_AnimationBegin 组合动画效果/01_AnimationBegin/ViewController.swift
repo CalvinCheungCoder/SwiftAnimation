@@ -108,15 +108,24 @@ class ViewController: UIViewController {
 //        loginButton?.layer.add(animation, forKey: nil)
         
         // 颜色
+//        let animation:CABasicAnimation = CABasicAnimation()
+//        animation.keyPath = "backgroundColor"
+//        animation.fromValue = UIColor.green.cgColor
+//        animation.toValue = UIColor.red.cgColor
+//        animation.duration = 2.0
+//        animation.fillMode = kCAFillModeForwards
+//        animation.isRemovedOnCompletion = false
+//        loginButton?.layer.add(animation, forKey: nil)
+        
+        // 淡入
         let animation:CABasicAnimation = CABasicAnimation()
-        animation.keyPath = "backgroundColor"
+        animation.keyPath = "opacity"
         animation.fromValue = UIColor.green.cgColor
-        animation.toValue = UIColor.red.cgColor
+        animation.toValue = 1.0
         animation.duration = 2.0
         animation.fillMode = kCAFillModeForwards
         animation.isRemovedOnCompletion = false
         loginButton?.layer.add(animation, forKey: nil)
-        
     }
 }
 
