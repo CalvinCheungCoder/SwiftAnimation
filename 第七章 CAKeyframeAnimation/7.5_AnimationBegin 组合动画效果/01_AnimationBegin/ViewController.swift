@@ -68,9 +68,19 @@ class ViewController: UIViewController {
         
         // transform除了scale缩放属性之外还有rotation旋转属性
         // 旋转
+//        let animation:CABasicAnimation = CABasicAnimation()
+//        animation.keyPath = "transform.rotation"
+//        animation.toValue = 3.14/2
+//        animation.duration = 2.0
+//        animation.fillMode = kCAFillModeForwards
+//        animation.isRemovedOnCompletion = false
+//        loginButton?.layer.add(animation, forKey: nil)
+        
+        
+        //位置
         let animation:CABasicAnimation = CABasicAnimation()
-        animation.keyPath = "transform.rotation"
-        animation.toValue = 3.14/2
+        animation.keyPath = "transform.translation.y"
+        animation.toValue = 100
         animation.duration = 2.0
         animation.fillMode = kCAFillModeForwards
         animation.isRemovedOnCompletion = false
