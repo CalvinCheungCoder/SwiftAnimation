@@ -88,14 +88,24 @@ class ViewController: UIViewController {
         
         
         // 圆角
+//        let animation:CABasicAnimation = CABasicAnimation()
+//        animation.keyPath = "cornerRadius"
+//        animation.toValue = 15
+//        animation.duration = 2.0
+//        animation.fillMode = kCAFillModeForwards
+//        animation.isRemovedOnCompletion = false
+//        loginButton?.layer.add(animation, forKey: nil)
+        
+        // 边框
+        loginButton?.layer.borderColor = UIColor.gray.cgColor
+        loginButton?.layer.cornerRadius = 10.0
         let animation:CABasicAnimation = CABasicAnimation()
-        animation.keyPath = "cornerRadius"
-        animation.toValue = 15
+        animation.keyPath = "borderWidth"
+        animation.toValue = 10
         animation.duration = 2.0
         animation.fillMode = kCAFillModeForwards
         animation.isRemovedOnCompletion = false
         loginButton?.layer.add(animation, forKey: nil)
-        
         
     }
 }
