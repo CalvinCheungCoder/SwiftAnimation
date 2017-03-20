@@ -10,22 +10,43 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    //var loginButton:UIButton?
+    var singleTap1:UITapGestureRecognizer?
+    var singleTap2:UITapGestureRecognizer?
+    var singleTap3:UITapGestureRecognizer?
+    var buttonview1:ButtonView?
+    var buttonview2:ButtonView?
+    var buttonview3:ButtonView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        buttonview1 = ButtonView(frame:CGRect(x: 100, y: 150, width: 210, height: 70))
+        buttonview2 = ButtonView(frame:CGRect(x: 100, y: 275, width: 210, height: 70))
+        buttonview3 = ButtonView(frame:CGRect(x: 100, y: 400, width: 210, height: 70))
         
-        let loginButton:MyButton = MyButton(frame: CGRect(x: 20, y: 230, width: self.view.frame.width-20*2,height: 50))
-        loginButton.layer.cornerRadius = 3
-        loginButton.layer.masksToBounds = true
-        loginButton.setTitle("登陆", for: UIControlState())
-        loginButton.addTarget(self, action: #selector(ViewController.loginAction(_:event:)), for: UIControlEvents.touchUpInside)
-        self.view.addSubview(loginButton)
+        singleTap1 = UITapGestureRecognizer(target: self, action: #selector(ViewController.viewAction1))
+        singleTap2 = UITapGestureRecognizer(target: self, action: #selector(ViewController.viewAction2))
+        singleTap3 = UITapGestureRecognizer(target: self, action: #selector(ViewController.viewAction3))
+        
+        buttonview1?.addGestureRecognizer(singleTap1!)
+        buttonview2?.addGestureRecognizer(singleTap2!)
+        buttonview3?.addGestureRecognizer(singleTap3!)
+        
+        self.view.addSubview(buttonview1!)
+        self.view.addSubview(buttonview2!)
+        self.view.addSubview(buttonview3!)
     }
-    
-    func loginAction(_ sender:UIButton,event:UIEvent) {
-        let bt:MyButton = sender as! MyButton
-        bt.StartButtonAnimatin(sender, mevent: event)
+    func viewAction1(){
+        buttonview1?.startAnimation()
+    }
+    func viewAction2(){
+        buttonview2?.startAnimation()
+    }
+    func viewAction3(){
+        buttonview3?.startAnimation()
+    }
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
 }
 

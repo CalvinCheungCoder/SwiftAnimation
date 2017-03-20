@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3E50C50B1E7D2D640043E649 /* MyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E50C50A1E7D2D640043E649 /* MyButton.swift */; };
+		3E19B9571E7F68CB00D0BBB7 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E19B9561E7F68CB00D0BBB7 /* ButtonView.swift */; };
+		3E19B9591E7F68F300D0BBB7 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E19B9581E7F68F300D0BBB7 /* CircleView.swift */; };
 		3ECE3F5C1E6707AE006F280D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECE3F5B1E6707AE006F280D /* AppDelegate.swift */; };
 		3ECE3F5E1E6707AE006F280D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECE3F5D1E6707AE006F280D /* ViewController.swift */; };
 		3ECE3F611E6707AE006F280D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ECE3F5F1E6707AE006F280D /* Main.storyboard */; };
@@ -16,7 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3E50C50A1E7D2D640043E649 /* MyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyButton.swift; sourceTree = "<group>"; };
+		3E19B9561E7F68CB00D0BBB7 /* ButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		3E19B9581E7F68F300D0BBB7 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		3ECE3F581E6707AE006F280D /* 01_AnimationBegin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 01_AnimationBegin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ECE3F5B1E6707AE006F280D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3ECE3F5D1E6707AE006F280D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,7 +60,8 @@
 			children = (
 				3ECE3F5B1E6707AE006F280D /* AppDelegate.swift */,
 				3ECE3F5D1E6707AE006F280D /* ViewController.swift */,
-				3E50C50A1E7D2D640043E649 /* MyButton.swift */,
+				3E19B9561E7F68CB00D0BBB7 /* ButtonView.swift */,
+				3E19B9581E7F68F300D0BBB7 /* CircleView.swift */,
 				3ECE3F5F1E6707AE006F280D /* Main.storyboard */,
 				3ECE3F621E6707AE006F280D /* Assets.xcassets */,
 				3ECE3F641E6707AE006F280D /* LaunchScreen.storyboard */,
@@ -139,9 +142,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E19B9591E7F68F300D0BBB7 /* CircleView.swift in Sources */,
 				3ECE3F5E1E6707AE006F280D /* ViewController.swift in Sources */,
 				3ECE3F5C1E6707AE006F280D /* AppDelegate.swift in Sources */,
-				3E50C50B1E7D2D640043E649 /* MyButton.swift in Sources */,
+				3E19B9571E7F68CB00D0BBB7 /* ButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
