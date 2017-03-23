@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         
         let emitterCell = CAEmitterCell()
         emitterCell.name = "fire"
-        emitterCell.emissionLongitude  = CGFloat(M_PI) // emissionLongitude:x-y 平面的 发 射方向
+        emitterCell.emissionLongitude   = CGFloat(M_PI) // emissionLongitude:x-y 平面的 发 射方向
         emitterCell.velocity			= -1 // 粒子速度 负数表明向上燃烧
         emitterCell.velocityRange		= 50 // 粒子速度范围
         emitterCell.emissionRange		= 1.1 //周围发射角度
