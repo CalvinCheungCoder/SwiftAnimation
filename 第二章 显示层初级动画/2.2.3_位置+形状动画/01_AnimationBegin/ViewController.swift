@@ -32,7 +32,6 @@ class ViewController: UIViewController {
         UIView.setAnimationDuration(1)// 动画时间
         loginButton!.bounds = CGRect(x: 0, y: 210, width: loginButton!.frame.size.width*0.7, height: loginButton!.frame.size.height*1.2)
         UIView.commitAnimations()// 动画提交
-        
     }
 
     override func didReceiveMemoryWarning() {

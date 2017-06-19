@@ -27,7 +27,7 @@ class ViewController: UIViewController {
     // 第二阶段:移动Btn
     override func viewWillAppear(_ animated: Bool) {
         
-        // 方法一:闭包
+//        // 方法一:闭包
 //        UIView.animate(withDuration: 1) { 
 //            self.loginButton!.frame = CGRect(x: 20, y: self.loginButton!.frame.origin.y, width: self.loginButton!.frame.width, height: self.loginButton!.frame.height)
 //        }

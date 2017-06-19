@@ -29,8 +29,8 @@ class ViewController: UIViewController {
         
         // 缩放，基于 UIView 的 transform 属性
         UIView.beginAnimations(nil, context: nil)// 动画开始
-        UIView.setAnimationDuration(1)// 动画时间
-        loginButton!.transform = CGAffineTransform(scaleX: 0.7, y: 1.2)// 缩放比，>1为扩大，<1为缩放
+        UIView.setAnimationDuration(2)// 动画时间
+        loginButton!.transform = CGAffineTransform(scaleX: 0.5, y: 1.2)// 缩放比，>1为扩大，<1为缩放
         UIView.commitAnimations()// 动画提交
         
     }

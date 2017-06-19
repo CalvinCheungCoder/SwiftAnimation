@@ -32,7 +32,6 @@ class ViewController: UIViewController {
         UIView.setAnimationDuration(1)// 动画时间
         let angel:CGFloat = CGFloat(M_PI_4)
         loginButton!.transform = CGAffineTransform(rotationAngle: angel)// rotationAngle 是以弧度为单位旋转的
-        
         UIView.commitAnimations()// 动画提交
         
     }
