@@ -36,7 +36,6 @@ class ViewController: UIViewController {
             self.imageViewPlane?.frame = CGRect(x: 300, y: 300, width: 50, height: 50)
         }, completion:{(finish) in
             print("done")
-            
         })
     }
     
