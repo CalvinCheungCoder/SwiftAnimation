@@ -9,6 +9,7 @@
 import UIKit
 
 class BlackHoleView: UIView {
+    
     var blackHoleRadius:Float = 0
     func blackHoleIncrease(_ radius: Float){
         blackHoleRadius = radius

@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         
         index = 0
         displaylink = CADisplayLink.init(target: self, selector: #selector(ViewController.refushImage))
-        displaylink?.frameInterval = 1
+        displaylink?.preferredFramesPerSecond = 60
         displaylink?.add(to: RunLoop.current, forMode: RunLoopMode.defaultRunLoopMode)
     }
     

@@ -33,9 +33,9 @@ class ViewController: UIViewController {
         Img?.image = UIImage(named: "\(index).png")
         index += 1
         if(index == 67){
-            timer?.invalidate()
-            index -= 1
-            Img?.image = UIImage(named: "\(index).png")
+//            timer?.invalidate()
+            index = 0
+//            Img?.image = UIImage(named: "\(index).png")
         }
     }
     
