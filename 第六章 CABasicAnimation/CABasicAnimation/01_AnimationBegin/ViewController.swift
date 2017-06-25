@@ -27,8 +27,8 @@ class ViewController: UIViewController {
          //位置
 //         let animation:CABasicAnimation = CABasicAnimation()
 //         animation.keyPath = "position"
-//         let positionX:CGFloat = loginButton!.frame.origin.x+0.5*loginButton!.frame.size.width;
-//         let positionY:CGFloat = loginButton!.frame.origin.y+0.5*loginButton!.frame.size.height+100;
+////         let BtnX:CGFloat = loginButton!.frame.origin.x+0.5*loginButton!.frame.size.width;
+////         let BtnY:CGFloat = loginButton!.frame.origin.y+0.5*loginButton!.frame.size.height+100;
 //         animation.byValue = NSValue(cgPoint:CGPoint(x:-20,y:100))
 //         animation.duration = 2.0
 //         animation.fillMode = kCAFillModeForwards
